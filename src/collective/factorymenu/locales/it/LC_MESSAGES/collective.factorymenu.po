@@ -116,7 +116,7 @@ msgstr "Torna"
 
 #: ../browser/view.pt:143
 msgid "Save changes"
-msgstr "Modifiche salvate"
+msgstr "Salva modifiche"
 
 #: ../browser/view.pt:111
 msgid "TALES condition"
