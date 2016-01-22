@@ -9,7 +9,7 @@ from plone.app.contentmenu.interfaces import IFactoriesSubMenuItem
 from plone.app.contentmenu.menu import FactoriesMenu as PloneFactoriesMenu
 from plone.app.contentmenu.menu import FactoriesSubMenuItem as PFSubMenuItem
 from plone.memoize.instance import memoize
-from . import MessageFactory as _
+from . import _
 from .interfaces import ICustomFactoryMenuProvider, ICollectiveFactorymenuLayer
 from zope.annotation.interfaces import IAnnotations
 from zope.component import getMultiAdapter
@@ -168,10 +168,10 @@ class FactoriesMenu(PloneFactoriesMenu):
             context_url = folder.absolute_url()
             results.append(
                 {'title': _(u'custommenu_manage_title',
-                            default=_(u'Customize menu\u2026')),
+                            default=u'Customize menu\u2026'),
                  'description': _(u'custommenu_manage_description',
-                                  default=_(u'Manage custom elements '
-                                            u'of this menu')),
+                                  default=u'Manage custom elements '
+                                          u'of this menu'),
                  'action': context_url + '/@@customize-factoriesmenu',
                  'selected': False,
                  'icon': None,

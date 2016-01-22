@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-"""Installer for the collective.factorymenu package."""
 
 from setuptools import find_packages
 from setuptools import setup
@@ -19,7 +18,7 @@ long_description = (
 
 setup(
     name='collective.factorymenu',
-    version='1.0a1',
+    version='0.1.0',
     description="Customize the Plone add menu",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -33,7 +32,7 @@ setup(
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
     keywords='Python Plone',
-    author='keul',
+    author='Luca Fabbri',
     author_email='luca@keul.it',
     url='https://pypi.python.org/pypi/collective.factorymenu',
     license='GPL version 2',

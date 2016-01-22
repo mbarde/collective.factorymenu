@@ -8,7 +8,17 @@
   <browser:resourceDirectory
       name="collective.factorymenu"
       directory="static"
-      layer="collective.factorymenu.interfaces.ICollectiveFactorymenuLayer"
+      layer="..interfaces.ICollectiveFactorymenuLayer"
+      />
+
+  <browser:page
+      for="OFS.interfaces.IFolder"
+      name="customize-factoriesmenu"
+      class=".view.CustomizeFactoriesMenu"
+	  template="view.pt"
+      permission="collective.factorymenu.Manage"
+      allowed_attributes="getSavedCustomizations"
+      layer="..interfaces.ICollectiveFactorymenuLayer"
       />
 
 </configure>

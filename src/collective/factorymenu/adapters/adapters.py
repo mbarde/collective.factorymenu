@@ -3,7 +3,7 @@
 import sys
 from Products.CMFCore.utils import getToolByName
 from Products.PageTemplates import Expressions
-from .. import MessageFactory as mf
+from .. import _ as mf
 from .. import logger
 from ..interfaces import ICustomFactoryMenuProvider
 from zope.component import ComponentLookupError
@@ -26,7 +26,8 @@ class MenuCoreAdapter(object):
                 'submenu': None,
                 'extra': {'separator': None,
                           'id': custom['element-id'],
-                          'class': 'contenttype-%' % custom['element-id']},
+                          'class': 'contenttype-%s' % custom['element-id']
+                          },
                 }
 
     def getMenuCustomization(self, data, results):
