@@ -87,19 +87,25 @@ class CustomizeFactoriesMenu(BrowserView):
 
         for x in range(0, len(form.get('index', []))):
             # check not-mandatory data
-            if not form.get('element-name')[x] or not form.get('element-tales')[x]:
+            if not form.get('element-name')[x] or\
+                    not form.get('element-tales')[x]:
                 return _(u'Please, provide all required data'), 'error'
             saved_customizations.append(
-                self._generateNewMenuElement(x, form.get('element-id')[x], form.get('element-name')[x],
-                                             form.get('element-descr')[x], form.get('icon-tales')[x],
-                                             form.get('condition-tales')[x], form.get('element-tales')[x]))
+                self._generateNewMenuElement(x, form.get('element-id')[x],
+                                             form.get('element-name')[x],
+                                             form.get('element-descr')[x],
+                                             form.get('icon-tales')[x],
+                                             form.get('condition-tales')[x],
+                                             form.get('element-tales')[x]))
 
         annotations = IAnnotations(context)
-        annotations[ANN_CUSTOMMENU_KEY] = ({'inherit': form.get('inherit',False)}, saved_customizations)
-        annotations._p_changed=1
+        annotations[ANN_CUSTOMMENU_KEY] = (
+            {'inherit': form.get('inherit', False)}, saved_customizations)
+        annotations._p_changed = 1
         return _(u'Customizations updated')
 
-    def _generateNewMenuElement(self, index, id, name, descr, icon, condition, element):
+    def _generateNewMenuElement(self, index, id, name, descr, icon,
+                                condition, element):
         return {'index': index,
                 'element-id': id,
                 'element-name': name,
@@ -113,15 +119,17 @@ class CustomizeFactoriesMenu(BrowserView):
         context = self.context
         extras, saved_customizations = self.getSavedCustomizations()
 
-        to_delete = form.get('delete',[])
+        to_delete = form.get('delete', [])
         if not to_delete:
-            return _(u'Please, select at least one entry to be deleted'), 'error'
-        saved_customizations = [x for x in saved_customizations if x['index'] not in to_delete]
+            return (_(u'Please, select at least one entry to be deleted'),
+                    'error')
+        saved_customizations = [
+            x for x in saved_customizations if x['index'] not in to_delete]
         self._reindex(saved_customizations)
 
         annotations = IAnnotations(context)
         annotations[ANN_CUSTOMMENU_KEY] = (extras, saved_customizations)
-        annotations._p_changed=1
+        annotations._p_changed = 1
         return _(u'Customizations removed')
 
     def enable(self):
@@ -147,12 +155,12 @@ class CustomizeFactoriesMenu(BrowserView):
     def enabled(self):
         context = self.context
         annotations = IAnnotations(context)
-        return annotations.has_key(ANN_CUSTOMMENU_KEY)
+        return ANN_CUSTOMMENU_KEY in annotations.keys()
 
     def getSavedCustomizations(self):
         context = self.context
         annotations = IAnnotations(context)
-        if annotations.has_key(ANN_CUSTOMMENU_KEY):
+        if ANN_CUSTOMMENU_KEY in annotations.keys():
             return annotations[ANN_CUSTOMMENU_KEY]
         return ({'inherit': True}, [])
 
