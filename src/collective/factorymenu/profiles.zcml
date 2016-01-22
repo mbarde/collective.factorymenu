@@ -9,7 +9,7 @@
       name="default"
       title="collective.factorymenu"
       directory="profiles/default"
-      description="Installs the collective.factorymenu add-on."
+      description="Hide, enhance, change elements inside the content creation menu"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 

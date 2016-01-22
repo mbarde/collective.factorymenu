@@ -12,160 +12,162 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: it\n"
+"Language-Name: Italian\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.factorymenu\n"
+"X-Is-Fallback-For: it-ch it-it\n"
 
 #: ../browser/view.pt:205
 msgid "Add this"
-msgstr ""
+msgstr "Aggiungi"
 
 #: ../browser/view.py:125
 msgid "Customizations removed"
-msgstr ""
+msgstr "Personalizzazioni rimosse"
 
 #: ../browser/view.py:100
 msgid "Customizations updated"
-msgstr ""
+msgstr "Personalizzazioni aggiornate"
 
 #: ../browser/view.pt:48
 msgid "Customized menu elements"
-msgstr ""
+msgstr "Elementi di menù personalizzati"
 
 #: ../browser/view.pt:145
 msgid "Delete selected"
-msgstr ""
+msgstr "Elimina selezionati"
 
 #: ../browser/view.pt:137
 msgid "Delete?"
-msgstr ""
+msgstr "Elimina?"
 
 #: ../browser/view.pt:36
 msgid "Disable"
-msgstr ""
+msgstr "Disabilita"
 
 #: ../browser/view.pt:32
 msgid "Disable menu customizations here"
-msgstr ""
+msgstr "Disabilita personalizzazioni di menù qui"
 
 #: ../browser/view.pt:91
 msgid "Element description"
-msgstr ""
+msgstr "Descrizione elemento"
 
 #: ../browser/view.pt:68
 msgid "Element id"
-msgstr ""
+msgstr "Id elemento"
 
 #: ../browser/view.pt:78
 msgid "Element name"
-msgstr ""
+msgstr "Nome elemento"
 
 #: ../browser/enabled.pt:37
 msgid "Enable"
-msgstr ""
+msgstr "Abilita"
 
 #: ../browser/enabled.pt:32
 msgid "Enable menu customizations here"
-msgstr ""
+msgstr "Abilita personalizzazioni di menù qui"
 
 #: ../browser/view.py:43
 msgid "Enabled local customizations"
-msgstr ""
+msgstr "Abilita personalizzazioni locali"
 
 #: ../browser/enabled.pt:16
 msgid "Factories menu management activation"
-msgstr ""
+msgstr "Attivazione personalizzazione menù di creazione"
 
 msgid "Hide, enhance, change elements inside the content creation menu"
-msgstr ""
+msgstr "Nascondi, estendi, modifica elementi dentro al menù di creazione tipi"
 
 #: ../browser/view.pt:52
 msgid "Inherit"
-msgstr ""
+msgstr "Eredita"
 
 #: ../browser/view.py:48
 msgid "Local customizations disabled"
-msgstr ""
+msgstr "Personalizzazioni locali disabilitate"
 
 #: ../browser/view.pt:16
 msgid "Manage factories menu"
-msgstr ""
+msgstr "Gestione menù di creazione"
 
 #: ../browser/view.py:82
 msgid "New entry added"
-msgstr ""
+msgstr "Nuova voce aggiunta"
 
 #: ../browser/view.pt:155
 msgid "New menu element"
-msgstr ""
+msgstr "Nuova voce di menù"
 
 #: ../browser/view.py:66
 msgid "Please, provide all required data"
-msgstr ""
+msgstr "Prego, fornisci tutti i dati richiesti"
 
 #: ../browser/view.py:118
 msgid "Please, select at least one entry to be deleted"
-msgstr ""
+msgstr "Prego, seleziona almeno un elemento da eliminare"
 
 #: ../browser/enabled.pt:20
 #: ../browser/view.pt:20
 msgid "Return"
-msgstr ""
+msgstr "Torna"
 
 #: ../browser/view.pt:143
 msgid "Save changes"
-msgstr ""
+msgstr "Modifiche salvate"
 
 #: ../browser/view.pt:111
 msgid "TALES condition"
-msgstr ""
+msgstr "Condizione TALES"
 
 #: ../browser/view.pt:121
 msgid "TALES expression for URL"
-msgstr ""
+msgstr "Espressione TALES per URL"
 
 #: ../browser/view.pt:101
 msgid "TALES icon"
-msgstr ""
+msgstr "TALES per icona"
 
 #. Default: "Check this to inherit also customizations from the site root."
 #: ../browser/view.pt:58
 msgid "context_inherit_help"
-msgstr ""
+msgstr "Seleziona questo per ereditare anche le personlaizzioni dalla radice del sito."
 
 #. Default: "Manage custom elements of this menu"
 #: ../menu.py:172
 msgid "custommenu_manage_description"
-msgstr ""
+msgstr "Gestisci elementi personalizzati per questo menù"
 
 #. Default: "Customize menu…"
 #: ../menu.py:170
 msgid "custommenu_manage_title"
-msgstr ""
+msgstr "Personalizzata menù…"
 
 #. Default: "Click the button below disable the customization feature in the current context"
 #: ../browser/view.pt:33
 msgid "help_disable_customizations"
-msgstr ""
+msgstr "Clicca il bottone sotto per disabilitare le personalizzazioni sul contesto corrente"
 
 #. Default: "Click the button below to locally enable customization of the menu in the current context"
 #: ../browser/enabled.pt:33
 msgid "help_enable_customizations"
-msgstr ""
+msgstr "Clicca il pulsante sotto per abilitare le personalizzazioni locali del menù sul contesto corrente"
 
 #. Default: "(Required)"
 #: ../browser/view.pt:80
 msgid "label_required"
-msgstr ""
+msgstr "(Obbligatorio)"
 
 #. Default: "Check this to make elements defined there available everywhere in the site. Uncheck to make customizations available only in the site root."
 #: ../browser/view.pt:54
 msgid "portal_inherit_help"
 msgstr ""
+"Seleziona questo per rendere gli elementi qui definiti disponibili ovunque nel sito.\n"
+"Deseleziona per rendere queste personalizzazioni disponibili solo nella radice del sito."
 
 #. Default: "Required"
 #: ../browser/view.pt:80
 msgid "title_required"
-msgstr ""
-
+msgstr "Obbligatorio"
