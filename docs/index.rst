@@ -1,0 +1,5 @@
+====================
+collective.factorymenu
+====================
+
+User documentation
