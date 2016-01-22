@@ -123,8 +123,12 @@ class CustomizeFactoriesMenu(BrowserView):
         if not to_delete:
             return (_(u'Please, select at least one entry to be deleted'),
                     'error')
+        # By index
         saved_customizations = [
             x for x in saved_customizations if x['index'] not in to_delete]
+        # By element-id (not exposed by UI)
+        saved_customizations = [
+            x for x in saved_customizations if x['element-id'] not in to_delete]
         self._reindex(saved_customizations)
 
         annotations = IAnnotations(context)
