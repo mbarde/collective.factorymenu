@@ -143,7 +143,7 @@ msgstr "Gestisci elementi personalizzati per questo menù"
 #. Default: "Customize menu…"
 #: ../menu.py:170
 msgid "custommenu_manage_title"
-msgstr "Personalizzata menù…"
+msgstr "Personalizza menù…"
 
 #. Default: "Click the button below disable the customization feature in the current context"
 #: ../browser/view.pt:33
