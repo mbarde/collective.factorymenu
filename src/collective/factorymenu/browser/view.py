@@ -164,8 +164,11 @@ class CustomizeFactoriesMenu(BrowserView):
     def getSavedCustomizations(self):
         context = self.context
         annotations = IAnnotations(context)
-        if ANN_CUSTOMMENU_KEY in annotations.keys():
-            return annotations[ANN_CUSTOMMENU_KEY]
+        try:
+            if ANN_CUSTOMMENU_KEY in annotations.keys():
+                return annotations[ANN_CUSTOMMENU_KEY]
+        except AttributeError:
+            return ({'inherit': True}, [])
         return ({'inherit': True}, [])
 
     @property

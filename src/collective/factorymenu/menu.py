@@ -57,11 +57,6 @@ class FactoriesSubMenuItem(PFSubMenuItem):
     def getCustomMenuResults(self):
         data = self._get_data()
 
-        # If folder can't be annotable, do nothing
-        # uncommon but may happen for old stuff like PloneGazette
-        if not queryAdapter(data['container'], interface=IAnnotations):
-            return None
-
         try:
             m_provider = ICustomFactoryMenuProvider(data['container'])
         except TypeError:
@@ -143,11 +138,6 @@ class FactoriesMenu(PloneFactoriesMenu):
 
         data = {'context': context,
                 'portal_url': portal_url, 'container': folder}
-
-        # If folder can't be annotable, do nothing
-        # uncommon but may happen for old stuff like PloneGazette
-        if not queryAdapter(folder, interface=IAnnotations):
-            return results
 
         try:
             m_provider = ICustomFactoryMenuProvider(folder)
